@@ -1,0 +1,6 @@
+/auto-save-list/
+*.el
+/elpa/
+/eshell/
+semanticdb/
+/projectile-bookmarks.eld
