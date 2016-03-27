@@ -28,6 +28,8 @@
     smartparens
     sr-speedbar
     projectile
+    virtualenv
+    virtualenvwrapper
     volatile-highlights
     undo-tree
     zygospore))
