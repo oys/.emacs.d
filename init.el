@@ -21,6 +21,7 @@
     clean-aindent-mode
     comment-dwim-2
     dtrt-indent
+    magit
     ws-butler
     iedit
     yasnippet
