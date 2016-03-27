@@ -26,6 +26,7 @@
     iedit
     yasnippet
     smartparens
+    sr-speedbar
     projectile
     volatile-highlights
     undo-tree
@@ -171,3 +172,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Iosevka" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+
+;; Show sr-sppedbar window on the left.
+(setq sr-speedbar-right-side nil)
