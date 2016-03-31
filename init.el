@@ -21,6 +21,7 @@
     clean-aindent-mode
     comment-dwim-2
     dtrt-indent
+    emmet-mode
     magit
     ws-butler
     iedit
@@ -190,3 +191,9 @@
 ;; sql-indent
 (eval-after-load "sql"
   (load-library "sql-indent"))
+
+;; emmet-mode
+(require 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode)
+(add-hook 'html-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook  'emmet-mode)
