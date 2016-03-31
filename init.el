@@ -27,6 +27,7 @@
     yasnippet
     smartparens
     sr-speedbar
+    sql-indent
     projectile
     virtualenv
     virtualenvwrapper
@@ -185,3 +186,7 @@
 ;; Load the solarized-dark color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 (load-theme 'solarized t)
+
+;; sql-indent
+(eval-after-load "sql"
+  (load-library "sql-indent"))
