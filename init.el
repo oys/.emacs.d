@@ -179,7 +179,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Iosevka" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+ '(default ((t (:family "Iosevka" :foundry "PfEd" :slant normal :weight normal :height 113 :width normal)))))
 
 ;; Show sr-sppedbar window on the left.
 (setq sr-speedbar-right-side nil)
