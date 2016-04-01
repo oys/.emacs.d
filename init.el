@@ -22,6 +22,7 @@
     comment-dwim-2
     dtrt-indent
     emmet-mode
+    erlang
     magit
     ws-butler
     iedit
