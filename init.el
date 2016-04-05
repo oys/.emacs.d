@@ -23,6 +23,8 @@
     dtrt-indent
     emmet-mode
     erlang
+    flycheck
+    flycheck-irony
     magit
     ws-butler
     iedit
@@ -62,6 +64,7 @@
 (require 'setup-cedet)
 (require 'setup-editing)
 (require 'setup-irony)
+(require 'setup-flycheck)
 
 (windmove-default-keybindings)
 
@@ -76,8 +79,8 @@
 (add-hook 'after-init-hook 'global-company-mode)
 (delete 'company-semantic company-backends)
 (delete 'company-clang company-backends)
-(define-key c-mode-map  [(tab)] 'company-complete)
-(define-key c++-mode-map  [(tab)] 'company-complete)
+(define-key c-mode-map  [(tab)] 'company-irony)
+(define-key c++-mode-map  [(tab)] 'company-irony)
 ;; (define-key c-mode-map  [(control tab)] 'company-complete)
 ;; (define-key c++-mode-map  [(control tab)] 'company-complete)
 
