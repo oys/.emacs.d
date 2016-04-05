@@ -26,6 +26,7 @@
     magit
     ws-butler
     iedit
+    irony
     yasnippet
     smartparens
     sr-speedbar
@@ -59,6 +60,7 @@
 ;; (require 'setup-ggtags)
 (require 'setup-cedet)
 (require 'setup-editing)
+(require 'setup-irony)
 
 (windmove-default-keybindings)
 
