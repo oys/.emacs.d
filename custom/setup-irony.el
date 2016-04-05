@@ -12,4 +12,7 @@
 (add-hook 'irony-mode-hook 'my-irony-mode-hook)
 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 
+(eval-after-load 'company
+  '(add-to-list 'company-backends 'company-irony))
+
 (provide 'setup-irony)

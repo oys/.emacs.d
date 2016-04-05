@@ -27,6 +27,7 @@
     ws-butler
     iedit
     irony
+    company-irony
     yasnippet
     smartparens
     sr-speedbar
@@ -74,6 +75,7 @@
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (delete 'company-semantic company-backends)
+(delete 'company-clang company-backends)
 (define-key c-mode-map  [(tab)] 'company-complete)
 (define-key c++-mode-map  [(tab)] 'company-complete)
 ;; (define-key c-mode-map  [(control tab)] 'company-complete)
