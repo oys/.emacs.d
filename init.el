@@ -38,6 +38,7 @@
     virtualenv
     virtualenvwrapper
     volatile-highlights
+    web-mode
     undo-tree
     zygospore))
 
@@ -65,6 +66,7 @@
 (require 'setup-editing)
 (require 'setup-irony)
 (require 'setup-flycheck)
+(require 'setup-web-mode)
 
 (windmove-default-keybindings)
 
@@ -205,3 +207,4 @@
 (add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'html-mode-hook 'emmet-mode)
 (add-hook 'css-mode-hook  'emmet-mode)
+(add-hook 'web-mode-hook 'emmet-mode)
