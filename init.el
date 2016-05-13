@@ -208,3 +208,8 @@
 (add-hook 'html-mode-hook 'emmet-mode)
 (add-hook 'css-mode-hook  'emmet-mode)
 (add-hook 'web-mode-hook 'emmet-mode)
+
+;; Disable tool-bar, menu-bar, scroll-bar
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+(tool-bar-mode -1)
