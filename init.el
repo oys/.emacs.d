@@ -19,6 +19,7 @@
     helm-swoop
     ;; function-args
     clean-aindent-mode
+    cmake-mode
     comment-dwim-2
     dtrt-indent
     emmet-mode
