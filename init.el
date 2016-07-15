@@ -10,6 +10,7 @@
 
 (defconst demo-packages
   '(anzu
+    color-theme-solarized
     company
     duplicate-thing
     ggtags
@@ -196,7 +197,6 @@
 (setq sr-speedbar-right-side nil)
 
 ;; Load the solarized-dark color theme.
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 (load-theme 'solarized t)
 
 ;; sql-indent
