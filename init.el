@@ -194,6 +194,9 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Iosevka" :foundry "PfEd" :slant normal :weight normal :height 120 :width normal)))))
 
+;; Set Korean font-family
+(set-fontset-font t 'hangul (font-spec :name "NanumBarunGothic"))
+
 ;; Show sr-sppedbar window on the left.
 (setq sr-speedbar-right-side nil)
 
