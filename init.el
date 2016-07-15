@@ -196,7 +196,7 @@
 
 ;; Set Korean font-family
 (set-fontset-font t 'hangul (font-spec :name "NanumGothicCoding"))
-ㄴ
+
 ;; Show sr-sppedbar window on the left.
 (setq sr-speedbar-right-side nil)
 
