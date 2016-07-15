@@ -185,13 +185,14 @@
    (quote
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(default-input-method "korean-hangul")
- '(frame-background-mode (quote dark)))
+ '(frame-background-mode (quote dark))
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Iosevka" :foundry "PfEd" :slant normal :weight normal :height 113 :width normal)))))
+ '(default ((t (:family "Iosevka" :foundry "PfEd" :slant normal :weight normal :height 120 :width normal)))))
 
 ;; Show sr-sppedbar window on the left.
 (setq sr-speedbar-right-side nil)
