@@ -192,7 +192,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Iosevka" :foundry "PfEd" :slant normal :weight normal :height 120 :width normal)))))
+ '(default ((t (:family "Iosevka Medium" :foundry "PfEd" :slant normal :weight normal :height 120 :width normal)))))
 
 ;; Set Korean font-family
 (set-fontset-font t 'hangul (font-spec :name "NanumGothicCoding"))
