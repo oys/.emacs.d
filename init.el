@@ -10,6 +10,7 @@
 
 (defconst demo-packages
   '(anzu
+    bundler
     color-theme-solarized
     company
     duplicate-thing
