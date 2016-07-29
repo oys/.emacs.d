@@ -31,9 +31,11 @@
     magit
     ws-butler
     iedit
+    inf-ruby
     irony
     company-irony
     yasnippet
+    robe
     smartparens
     sr-speedbar
     sql-indent
@@ -71,6 +73,7 @@
 (require 'setup-flycheck)
 (require 'setup-web-mode)
 (require 'setup-c-env)
+(require 'setup-ruby-env)
 
 (windmove-default-keybindings)
 
@@ -210,8 +213,6 @@
 
 (global-set-key (kbd "C-c -") 'toggle-current-window-dedication)
 (put 'erase-buffer 'disabled nil)
-
-(require 'bundler)
 
 ;; Load $HOME/.bashrc file when shell-command execute.
 (setq shell-command-switch "-ic")
