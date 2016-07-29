@@ -209,3 +209,8 @@
 
 (global-set-key (kbd "C-c -") 'toggle-current-window-dedication)
 (put 'erase-buffer 'disabled nil)
+
+(require 'bundler)
+
+;; Load $HOME/.bashrc file when shell-command execute.
+(setq shell-command-switch "-ic")
