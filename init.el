@@ -115,10 +115,10 @@
 ;; setup GDB
 (setq
  ;; use gdb-many-windows by default
- gdb-many-windows t
+ gdb-many-windows nil
 
  ;; Non-nil means display source file containing the main routine at startup
- gdb-show-main t
+ gdb-show-main nil
  )
 
 ;; Package: clean-aindent-mode
@@ -166,7 +166,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
+    ("c567c85efdb584afa78a1e45a6ca475f5b55f642dfcd6277050043a568d1ac6f" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(default-input-method "korean-hangul")
  '(frame-background-mode (quote dark))
  '(tool-bar-mode nil))
@@ -175,7 +175,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Iosevka Medium" :foundry "PfEd" :slant normal :weight normal :height 120 :width normal)))))
+ '(default ((t (:family "Iosevka Term" :foundry "PfEd" :slant normal :weight normal :height 120 :width normal)))))
 
 ;; Set Korean font-family
 (set-fontset-font t 'hangul (font-spec :name "NanumGothicCoding"))
@@ -216,3 +216,14 @@
 
 ;; Load $HOME/.bashrc file when shell-command execute.
 (setq shell-command-switch "-ic")
+
+(defun set-window-width (n)
+  "Set the selected window's width."
+  (adjust-window-trailing-edge (selected-window) (- n (window-width)) t))
+
+(defun set-80-columns ()
+  "Set the selected window to 80 columns."
+  (interactive)
+  (set-window-width 80))
+
+(global-set-key "\C-x~" 'set-80-columns)
