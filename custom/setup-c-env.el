@@ -14,5 +14,6 @@
   (c-set-offset 'substatement-open 0))
 
 (add-hook 'c-mode-common-hook 'my-c-mode-hook)
+(add-hook 'c-mode-hook (lambda () (interactive) (column-marker-1 80)))
 
 (provide 'setup-c-env)
