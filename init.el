@@ -13,6 +13,7 @@
     bundler
     color-theme-solarized
     company
+    column-marker
     duplicate-thing
     ggtags
     helm
