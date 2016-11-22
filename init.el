@@ -170,19 +170,22 @@
     ("c567c85efdb584afa78a1e45a6ca475f5b55f642dfcd6277050043a568d1ac6f" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(default-input-method "korean-hangul")
  '(frame-background-mode (quote dark))
+ '(package-selected-packages
+   (quote
+    (zygospore yasnippet ws-butler web-mode volatile-highlights virtualenvwrapper virtualenv undo-tree sr-speedbar sql-indent smartparens rust-mode robe monokai-theme magit iedit helm-swoop helm-projectile helm-gtags ggtags flycheck-irony erlang emmet-mode duplicate-thing dtrt-indent company-irony comment-dwim-2 column-marker color-theme-solarized cmake-mode clean-aindent-mode bundler anzu)))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Iosevka Term" :foundry "PfEd" :slant normal :weight normal :height 120 :width normal)))))
+ '(default ((t (:family "Iosevka Term Medium" :foundry "PfEd" :slant normal :weight normal :height 120 :width normal)))))
 
 ;; Set Korean font-family
 (set-fontset-font t 'hangul (font-spec :name "NanumGothicCoding"))
 
-;; Show sr-sppedbar window on the left.
-(setq sr-speedbar-right-side nil)
+;; Show sr-sppedbar window on the right.
+(setq sr-speedbar-right-side 1)
 
 ;; Load the solarized-dark color theme.
 (load-theme 'solarized t)
