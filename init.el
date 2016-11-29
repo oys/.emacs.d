@@ -46,7 +46,11 @@
     volatile-highlights
     web-mode
     undo-tree
-    zygospore))
+    zygospore
+    tern
+    company-tern
+    web-beautify
+    js-doc))
 
 (defun install-packages ()
   "Install all required packages."
@@ -173,7 +177,7 @@
  '(frame-background-mode (quote dark))
  '(package-selected-packages
    (quote
-    (company-tern tern web-beautify zygospore yasnippet ws-butler web-mode volatile-highlights virtualenvwrapper virtualenv undo-tree sr-speedbar sql-indent smartparens rust-mode robe monokai-theme magit iedit helm-swoop helm-projectile helm-gtags ggtags flycheck-irony erlang emmet-mode duplicate-thing dtrt-indent company-irony comment-dwim-2 column-marker color-theme-solarized cmake-mode clean-aindent-mode bundler anzu)))
+    (js-doc company-tern tern web-beautify zygospore yasnippet ws-butler web-mode volatile-highlights virtualenvwrapper virtualenv undo-tree sr-speedbar sql-indent smartparens rust-mode robe monokai-theme magit iedit helm-swoop helm-projectile helm-gtags ggtags flycheck-irony erlang emmet-mode duplicate-thing dtrt-indent company-irony comment-dwim-2 column-marker color-theme-solarized cmake-mode clean-aindent-mode bundler anzu)))
  '(sr-speedbar-auto-refresh nil)
  '(tool-bar-mode nil))
 (custom-set-faces
